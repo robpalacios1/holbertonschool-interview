@@ -16,7 +16,7 @@
 - A README.md file, at the root of the folder of the project, is mandatory
 - Don’t forget to push your header file
 - All your header files should be include guarded
-- 
+
 ## Author :book:
 
 Roberto Palacios [Twitter](https://twitter.com/robpalacios11) | [GitHub](https://github.com/robpalacios1)
