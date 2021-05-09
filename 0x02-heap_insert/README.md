@@ -1,17 +1,50 @@
-# :gear: 0x00. Lockboxes :gear:
+# :gear: 0x02. Heap Insert :gear:
 
 ## Requirements
 
 ### General
 
 - Allowed editors: vi, vim, emacs
-- All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
+- All your files will be compiled on Ubuntu 14.04 LTS
+- Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
 - All your files should end with a new line
-- The first line of all your files should be exactly #!/usr/bin/python3
 - A README.md file, at the root of the folder of the project, is mandatory
-- Your code should be documented
-- Your code should use the PEP 8 style (version 1.7.x)
-- All your files must be executable
+- Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+- You are not allowed to use global variables
+- No more than 5 functions per file
+- You are allowed to use the standard library
+- In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
+- The prototypes of all your functions should be included in your header file called binary_trees.h
+- Don’t forget to push your header file
+- All your header files should be include guarded
+
+## More Info
+
+### Data structures
+
+#### Basic Binary Tree
+~~~
+/**
+ * struct binary_tree_s - Binary tree node
+ *
+ * @n: Integer stored in the node
+ * @parent: Pointer to the parent node
+ * @left: Pointer to the left child node
+ * @right: Pointer to the right child node
+ */
+struct binary_tree_s
+{
+    int n;
+    struct binary_tree_s *parent;
+    struct binary_tree_s *left;
+    struct binary_tree_s *right;
+};
+~~~
+#### Max Binary Heap
+~~~
+typedef struct binary_tree_s heap_t;
+~~~
+
 
 ## Author :book:
 
